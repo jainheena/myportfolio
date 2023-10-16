@@ -1,0 +1,91 @@
+.skill-container{
+    padding-top: 0%;
+    padding-bottom: 5%;
+    background-color:dimgrey;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    overflow: hidden;
+    
+}
+.skill{
+    font-size: 55px;
+    font-weight: bold;
+    color: darkgray;
+    white-space: nowrap; 
+    margin-left: auto;
+    text-align: right;
+    margin-right: 5%;
+    margin-bottom: 2%;
+    padding-top: 5%;
+}
+.sline{
+    width: 100vh;
+    height: 0.5vh;
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 2;
+}
+.cards{
+    display: flex;
+    flex-wrap: nowrap; /* Prevent cards from wrapping to a new line */
+    overflow-x:scroll;
+}
+.card{
+    background-color: gainsboro;
+    width: 350vw;
+    border: 1px solid aliceblue;
+    padding: 20px;
+    border-radius:3.5px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+.card-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.cards::-webkit-scrollbar {
+    width: 0.1em;
+}
+  
+.cards::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+/* Key points styling */
+.key-points {
+    list-style: none;
+    padding: 0;
+}
+
+.key-points li {
+    margin: 10px 0;
+    color: #666;
+    list-style:circle;
+}
+@media (max-width:767px){
+    .card{
+        background-color: gainsboro;
+        width: 300vw;
+        border: 1px solid aliceblue;
+        padding: 20px;
+        border-radius:3.5px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+    }
+    .skill{
+        text-align: center;
+        font-size: 40px;
+    }
+    .sline{
+        margin-left: 1%;
+        width: 100vw;
+        height: 1px;
+    }
+}

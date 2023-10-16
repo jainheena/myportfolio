@@ -1,0 +1,92 @@
+.education{
+    padding-bottom: 10%;
+    background-color:dimgray;
+    display: flex;
+}
+.edu{
+    font-size: 55px;
+    font-family: 'poppins';
+    color:darkgray;
+    text-align: center;
+    margin-right: 10%;
+    margin-left: 5%;
+    margin-top: 13%;
+}
+.eline{
+    width: 100vh;
+    height: 0.5vh;
+    background-color: aliceblue; /* Replace with the desired color */
+    position: absolute;
+}
+.cardss{
+    display: flex;
+    flex-wrap: nowrap; /* Prevent cards from wrapping to a new line */
+    overflow-x:scroll;
+    padding-top: 100px;
+}
+.cardd{
+    background-color: gray;
+    width: 350vw;
+    border: 1px solid aliceblue;
+    padding: 20px;
+    border-radius:3.5px;
+    margin: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+.cardd:hover {
+    transform: scale(1.05); /* Slightly scale up the card on hover */
+}
+.cardd-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.cardss::-webkit-scrollbar {
+    width: 0.1em;
+}
+  
+.cardss::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+@media (min-width:768px){
+    .eline{
+        width:50% ;
+        margin-top: 0px;
+        margin-left: 50%;
+        z-index: 2;
+    }
+}
+@media (max-width:767px){
+    .card{
+        background-color: gainsboro;
+        width: 100%;
+        border: 1px solid aliceblue;
+        padding: 20px;
+        border-radius:3.5px;
+        margin: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+    }
+    .edu{
+        text-align: center;
+        font-size: 40px;
+    }
+    .education{
+        flex-direction: column;
+    }
+    .eline{
+        width: 100%;
+        height: 1px;
+    }
+}
+.keyPoints {
+    list-style: none;
+    padding: 0;
+}
+
+.keyPoints li {
+    margin: 10px 0;
+    color: whitesmoke;
+    list-style:disc;
+}
